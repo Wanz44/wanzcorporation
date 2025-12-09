@@ -7,7 +7,7 @@
      --white: #e6f1ff;
      --gradient: linear-gradient(135deg, #0a192f 0%, #112240 100%);
      --gradient-accent: linear-gradient(135deg, #00ff00 0%, #8844c0 100%);
-     --neon-glow: 0 0 15px rgba(100, 255, 218, 0.7);
+     --neon-glow: 0 0 15px rgb(0, 255, 42);
      --neon-purple-glow: 0 0 15px rgba(157, 78, 221, 0.7);
  }
 
