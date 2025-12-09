@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANZCORPORATION - Solutions Digitales Complètes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i> WANZCORP
+            </div>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="#offres">Offres</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-elements">
+            <div class="hero-bg-element"></div>
+            <div class="hero-bg-element"></div>
+            <div class="grid-bg"></div>
+            <div class="floating-element" style="top: 20%; left: 10%;"></div>
+            <div class="floating-element"
+                style="top: 60%; right: 15%; background: var(--accent-purple); animation-delay: -5s;"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>WANZCORPORATION</h1>
+                <p class="tagline">Transformez vos idées en <span class="highlight">réalité digitale</span>. Nous créons
+                    des solutions web, mobiles et desktop sur mesure pour votre entreprise.</p>
+                <p>Chez <strong>WANZCORPORATION</strong>, nous vous accompagnons dans la création et la mise en ligne de
+                    votre présence numérique. Développement d'applications, sites web, systèmes de gestion en temps
+                    réel, webdesign et vente de templates - nous avons la solution adaptée à chaque besoin.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="cta-button pulse">
+                        <i class="fas fa-paper-plane"></i> Demander un devis
+                    </a>
+                    <a href="#templates" class="cta-button secondary">
+                        <i class="fas fa-store"></i> Voir nos templates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-cogs"></i> Nos Services Complets</h2>
+                <p>Des solutions digitales complètes pour tous vos projets</p>
+            </div>
+
+            <div class="services-categories">
+                <button class="category-btn active" data-category="all">Tous les services</button>
+                <button class="category-btn" data-category="web">Développement Web</button>
+                <button class="category-btn" data-category="mobile">Applications Mobile</button>
+                <button class="category-btn" data-category="desktop">Logiciels Desktop</button>
+                <button class="category-btn" data-category="design">Web Design</button>
+            </div>
+
+            <div class="services-grid" id="servicesContainer">
+                <!-- Service 1 -->
+                <div class="service-card" data-category="web">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Sites Web Professionnels</h3>
+                    <p>Création de sites web vitrine, e-commerce, portfolio, blog et applications web sur mesure avec
+                        les dernières technologies.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Sites responsives adaptés mobile</li>
+                        <li><i class="fas fa-check"></i> Intégration CMS (WordPress, etc.)</li>
+                        <li><i class="fas fa-check"></i> E-commerce (Shopify, WooCommerce)</li>
+                        <li><i class="fas fa-check"></i> Applications web complexes</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-category="mobile">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Applications Mobile</h3>
+                    <p>Développement d'applications natives et cross-platform pour iOS et Android avec interface
+                        intuitive et performances optimales.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Applications natives (Swift, Kotlin)</li>
+                        <li><i class="fas fa-check"></i> Applications cross-platform (React Native, Flutter)</li>
+                        <li><i class="fas fa-check"></i> Applications hybrides (Ionic, Cordova)</li>
+                        <li><i class="fas fa-check"></i> Publication sur App Store & Play Store</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-category="desktop">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Logiciels Desktop</h3>
+                    <p>Création de logiciels et applications desktop pour Windows, macOS et Linux avec interface moderne
+                        et fonctionnalités avancées.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Applications Electron</li>
+                        <li><i class="fas fa-check"></i> Logiciels .NET (C#, WPF)</li>
+                        <li><i class="fas fa-check"></i> Applications Java (JavaFX, Swing)</li>
+                        <li><i class="fas fa-check"></i> Solutions multiplateformes</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card" data-category="web design">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Web Design & UI/UX</h3>
+                    <p>Conception d'interfaces utilisateur modernes et expériences utilisateur optimisées pour maximiser
+                        l'engagement et la conversion.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Design d'interfaces modernes</li>
+                        <li><i class="fas fa-check"></i> Expérience utilisateur (UX) optimisée</li>
+                        <li><i class="fas fa-check"></i> Prototypage interactif (Figma, Adobe XD)</li>
+                        <li><i class="fas fa-check"></i> Identité visuelle et branding</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card" data-category="web">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Systèmes de Gestion</h3>
+                    <p>Développement de systèmes de gestion en temps réel pour entreprises : CRM, ERP, gestion de stock,
+                        réservations et plus.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Systèmes CRM personnalisés</li>
+                        <li><i class="fas fa-check"></i> Solutions ERP sur mesure</li>
+                        <li><i class="fas fa-check"></i> Gestion de stock en temps réel</li>
+                        <li><i class="fas fa-check"></i> Tableaux de bord analytiques</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card" data-category="web">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Hébergement & Infrastructure</h3>
+                    <p>Solutions d'hébergement web sécurisé, configuration de noms de domaine et infrastructure cloud
+                        pour vos projets.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Hébergement web sécurisé (GitHub Pages, Firebase, Netlify)</li>
+                        <li><i class="fas fa-check"></i> Configuration de noms de domaine</li>
+                        <li><i class="fas fa-check"></i> Services cloud (AWS, Google Cloud)</li>
+                        <li><i class="fas fa-check"></i> Maintenance et support technique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Store -->
+    <section class="templates" id="templates">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-store"></i> Boutique de Templates</h2>
+                <p>Templates prêts à l'emploi pour accélérer votre projet digital</p>
+            </div>
+
+            <div class="template-grid">
+                <!-- Template 1 -->
+                <div class="template-card">
+                    <div class="template-img">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">E-commerce</div>
+                        <h3 class="template-title">Template ShopPro</h3>
+                        <p>Template e-commerce complet avec panier, paiement, gestion de produits et interface admin.
+                        </p>
+                        <div class="template-price">$149<span> / licence unique</span></div>
+                        <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">
+                            <i class="fas fa-shopping-cart"></i> Acheter maintenant
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Template 2 -->
+                <div class="template-card">
+                    <div class="template-img">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">Portfolio</div>
+                        <h3 class="template-title">Template CreativePortfolio</h3>
+                        <p>Template portfolio moderne pour artistes, designers et freelances avec galerie interactive.
+                        </p>
+                        <div class="template-price">$79<span> / licence unique</span></div>
+                        <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">
+                            <i class="fas fa-shopping-cart"></i> Acheter maintenant
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Template 3 -->
+                <div class="template-card">
+                    <div class="template-img">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">Blog</div>
+                        <h3 class="template-title">Template BlogMaster</h3>
+                        <p>Template de blog avancé avec système de commentaires, catégories, recherche et interface
+                            rédacteur.</p>
+                        <div class="template-price">$99<span> / licence unique</span></div>
+                        <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">
+                            <i class="fas fa-shopping-cart"></i> Acheter maintenant
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#contact" class="cta-button secondary">
+                    <i class="fas fa-eye"></i> Voir tous nos templates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offres -->
+    <section id="offres">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-gem"></i> Nos Offres Intégrées</h2>
+                <p>Des packages complets adaptés à chaque type de projet</p>
+            </div>
+
+            <div class="offers-grid">
+                <!-- Offre Starter -->
+                <div class="offer-card">
+                    <div class="offer-badge">STARTER</div>
+                    <h3 class="offer-title">Site Web Simple</h3>
+                    <p class="offer-description">Parfait pour les petites entreprises et projets simples qui souhaitent
+                        une présence en ligne basique.</p>
+                    <div class="offer-price">$299<span> / projet</span></div>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check"></i> Site web 5 pages maximum</li>
+                        <li><i class="fas fa-check"></i> Design responsive moderne</li>
+                        <li><i class="fas fa-check"></i> Hébergement inclus (1 an)</li>
+                        <li><i class="fas fa-check"></i> Formulaire de contact</li>
+                        <li><i class="fas fa-check"></i> Intégration réseaux sociaux</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Application mobile</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Système de gestion</li>
+                    </ul>
+                    <a href="#contact" class="cta-button" style="width: 100%; margin-top: auto;">
+                        <i class="fas fa-rocket"></i> Choisir cette offre
+                    </a>
+                </div>
+
+                <!-- Offre Pro -->
+                <div class="offer-card">
+                    <div class="offer-badge">PRO</div>
+                    <h3 class="offer-title">Solution Business</h3>
+                    <p class="offer-description">Pour les entreprises en croissance ayant besoin d'une présence digitale
+                        complète et professionnelle.</p>
+                    <div class="offer-price">$899<span> / projet</span></div>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check"></i> Tout dans l'offre Starter</li>
+                        <li><i class="fas fa-check"></i> Site web jusqu'à 15 pages</li>
+                        <li><i class="fas fa-check"></i> Nom de domaine personnalisé</li>
+                        <li><i class="fas fa-check"></i> Application mobile basique</li>
+                        <li><i class="fas fa-check"></i> Système de gestion simple</li>
+                        <li><i class="fas fa-check"></i> Formation utilisateur</li>
+                        <li><i class="fas fa-check"></i> Support technique 6 mois</li>
+                    </ul>
+                    <a href="#contact" class="cta-button" style="width: 100%; margin-top: auto;">
+                        <i class="fas fa-rocket"></i> Choisir cette offre
+                    </a>
+                </div>
+
+                <!-- Offre Premium -->
+                <div class="offer-card premium">
+                    <h3 class="offer-title">Solution Entreprise</h3>
+                    <p class="offer-description">Solution complète pour les entreprises nécessitant une infrastructure
+                        digitale avancée et sur mesure.</p>
+                    <div class="offer-price">À partir de $2,500<span> / projet</span></div>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check"></i> Tout dans l'offre Pro</li>
+                        <li><i class="fas fa-check"></i> Application mobile native avancée</li>
+                        <li><i class="fas fa-check"></i> Système de gestion en temps réel</li>
+                        <li><i class="fas fa-check"></i> Logiciel desktop personnalisé</li>
+                        <li><i class="fas fa-check"></i> Optimisation SEO complète</li>
+                        <li><i class="fas fa-check"></i> Maintenance 12 mois</li>
+                        <li><i class="fas fa-check"></i> Support prioritaire 24/7</li>
+                    </ul>
+                    <a href="#contact" class="cta-button pulse" style="width: 100%; margin-top: auto;">
+                        <i class="fas fa-crown"></i> Solution sur mesure
+                    </a>
+                </div>
+            </div>
+
+            <p class="price-note"
+                style="text-align: center; margin-top: 50px; color: var(--light-blue); font-size: 1.1rem;">
+                Les tarifs varient selon la complexité du projet. <br>Contactez-nous pour un devis personnalisé et
+                rapide.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-envelope"></i> Contactez Notre Équipe</h2>
+                <p>Discutons de votre projet digital. Réponse garantie sous 24 heures.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <!-- Email -->
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Professionnel</h3>
+                            <p>contact@wanzcorporation.com</p>
+                            <p>support@wanzcorporation.com</p>
+                            <p style="color: var(--accent-blue); font-weight: 600;">Réponse sous 24h</p>
+                        </div>
+                    </div>
+
+                    <!-- Téléphone/WhatsApp -->
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone & WhatsApp</h3>
+                            <p>+243 991 085 491</p>
+                            <p>Disponible du lundi au vendredi</p>
+                            <p>9h00 - 18h00 (GMT+1)</p>
+                        </div>
+                    </div>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Réseaux Sociaux</h3>
+                            <p>Suivez-nous et contactez-nous sur nos réseaux</p>
+                            <div class="social-links">
+                                <a href="https://facebook.com/Wanzcorp" target="_blank" class="social-link"
+                                    title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://instagram.com/Wanzcorp" target="_blank" class="social-link"
+                                    title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/wanzcorporation" target="_blank"
+                                    class="social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://twitter.com/Wanzcorp" target="_blank" class="social-link"
+                                    title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adresse -->
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Zone de Service</h3>
+                            <p>République Démocratique du Congo</p>
+                            <p>Services disponibles à l'international</p>
+                            <p>Travail à distance et en présentiel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 30px; color: var(--accent-blue); font-size: 1.8rem;">Envoyez-nous un
+                        message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Votre nom complet *</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Votre adresse email *</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Votre numéro de téléphone</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+243 XXX XXX XXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service souhaité *</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Sélectionnez un service</option>
+                                <option value="website">Création de site web</option>
+                                <option value="mobile">Application mobile</option>
+                                <option value="desktop">Logiciel desktop</option>
+                                <option value="system">Système de gestion</option>
+                                <option value="design">Web Design / UI/UX</option>
+                                <option value="template">Achat de template</option>
+                                <option value="hosting">Hébergement & domaine</option>
+                                <option value="other">Autre projet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget estimé (USD)</label>
+                            <select id="budget" class="form-control">
+                                <option value="">Sélectionnez une fourchette</option>
+                                <option value="100-500">$100 - $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-5000">$1,000 - $5,000</option>
+                                <option value="5000+">Plus de $5,000</option>
+                                <option value="unknown">À déterminer</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Détails de votre projet *</label>
+                            <textarea id="message" class="form-control"
+                                placeholder="Décrivez votre projet, vos besoins et vos objectifs..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-button" style="width: 100%; padding: 18px; font-size: 1.1rem;">
+                            <i class="fas fa-paper-plane"></i> Envoyer la demande
+                        </button>
+
+                        <p style="color: var(--light-blue); font-size: 0.9rem; margin-top: 20px; text-align: center;">
+                            Nous vous répondrons dans les 24 heures ouvrables.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">WANZCORPORATION</div>
+                    <p class="footer-quote">« Le digital à votre portée. Rapide. Pro. Fiable. »</p>
+                    <p>Transformez vos idées en réalité digitale avec notre expertise en développement web, mobile,
+                        desktop et systèmes de gestion.</p>
+
+                    <div class="social-links" style="margin-top: 30px; justify-content: flex-start;">
+                        <a href="https://facebook.com/Wanzcorp" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/Wanzcorp" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/wanzcorporation" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/243991085491" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Développement Web</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Applications Mobile</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Logiciels Desktop</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Systèmes de Gestion</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Web Design & UI/UX</a></li>
+                        <li><a href="#templates"><i class="fas fa-chevron-right"></i> Templates Prêts à l'emploi</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Contact Rapide</h3>
+                    <ul>
+                        <li><a href="mailto:contact@wanzcorporation.com"><i class="fas fa-envelope"></i> Email:
+                                contact@wanzcorporation.com</a></li>
+                        <li><a href="tel:+243991085491"><i class="fas fa-phone"></i> Téléphone: +243 991 085 491</a>
+                        </li>
+                        <li><a href="https://wa.me/243991085491" target="_blank"><i class="fab fa-whatsapp"></i>
+                                WhatsApp: +243 991 085 491</a></li>
+                        <li><a href="https://facebook.com/Wanzcorp" target="_blank"><i class="fab fa-facebook"></i>
+                                Facebook: Wanzcorp</a></li>
+                        <li><a href="https://instagram.com/Wanzcorp" target="_blank"><i class="fab fa-instagram"></i>
+                                Instagram: @Wanzcorp</a></li>
+                        <li><a href="https://linkedin.com/company/wanzcorporation" target="_blank"><i
+                                    class="fab fa-linkedin"></i> LinkedIn: wanzcorporation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2023 WANZCORPORATION. Tous droits réservés. | Développement digital sur mesure
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton WhatsApp -->
+    <a href="https://wa.me/243991085491" target="_blank" class="whatsapp-badge" title="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+
+</html>
